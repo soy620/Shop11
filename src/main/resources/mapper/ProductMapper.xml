@@ -15,4 +15,10 @@
     <result column="p_date" jdbcType="TIMESTAMP" property="pDate" />
     <result column="cs_id" jdbcType="INTEGER" property="csId" />
   </resultMap>
+
+  <select id="getAllProducts" parameterType="ProductExt" resultMap="BaseResultMap">
+    select * from product
+  </select>
+
+
 </mapper>

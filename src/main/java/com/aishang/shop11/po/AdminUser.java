@@ -2,6 +2,7 @@ package com.aishang.shop11.po;
 
 import javax.persistence.*;
 
+
 @Table(name = "shop..admin_user")
 public class AdminUser {
     @Id

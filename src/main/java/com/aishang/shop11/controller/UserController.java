@@ -8,11 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author Saltice
+ */
 @RestController
 @RequestMapping("/user")
 public class UserController {
     @Resource
     UserService userService;
+
     @RequestMapping("/getAll")
     public List<User> getAll(){
         return userService.getAll();
